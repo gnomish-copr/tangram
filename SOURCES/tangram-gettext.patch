@@ -1,0 +1,17 @@
+From 614910be5e499a9c265cc6bef6f439103e8d03a5 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Ball=C3=B3=20Gy=C3=B6rgy?= <ballogyor@gmail.com>
+Date: Thu, 6 Feb 2025 04:11:07 +0100
+Subject: [PATCH] Fix gettext domain
+
+It should be `re.sonny.Tangram` instead of `Tangram`.
+---
+ po/meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/po/meson.build b/po/meson.build
+index 7f27e92..8929d77 100644
+--- a/po/meson.build
++++ b/po/meson.build
+@@ -1 +1 @@
+-i18n.gettext(meson.project_name(), preset: 'glib', args: ['--no-wrap'])
++i18n.gettext(app_id, preset: 'glib', args: ['--no-wrap'])
