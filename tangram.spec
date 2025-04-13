@@ -9,7 +9,6 @@ Source0:        https://github.com/sonnyp/Tangram/archive/v%{version}/Tangram-%{
 Patch0:         tangram-gettext.patch
 BuildArch:      noarch
 
-# Build dependencies
 BuildRequires:  meson
 BuildRequires:  git
 BuildRequires:  blueprint-compiler
@@ -19,7 +18,7 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  gjs-devel
 BuildRequires:  gtk4-devel
 BuildRequires:  libadwaita-devel
-# Runtime dependencies
+
 Requires:       gdk-pixbuf2
 Requires:       gjs
 Requires:       glib2
@@ -66,5 +65,7 @@ ln -s re.sonny.Tangram %{buildroot}%{_bindir}/tangram
 %{_datadir}/dbus-1/services/re.sonny.Tangram.service
 
 %changelog
+* Sun Apr 13 2025 Taiwbi <taiwbii@proton.me> - 3.3-2
+- Move to rpkg srpm build system
 * Mon Apr 07 2025 Taiwbi <taiwbii@proton.me> - 3.3-1
 - Initial package

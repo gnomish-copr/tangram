@@ -1,0 +1,10 @@
+srpm_build_deps:
+  - meson
+  - git
+  - blueprint-compiler
+  - appstream
+  - gettext
+  - desktop-file-utils
+  - gjs-devel
+  - gtk4-devel
+  - libadwaita-devel
