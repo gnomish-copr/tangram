@@ -8,3 +8,4 @@ srpm_build_deps:
   - gjs-devel
   - gtk4-devel
   - libadwaita-devel
+  - troll
