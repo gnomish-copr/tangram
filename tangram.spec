@@ -37,7 +37,8 @@ Tangram is a GNOME app to organize your web apps and pinned tabs.
 %autosetup -p1 -n Tangram-%{version}
 
 # Create symlink to system troll library instead of downloading
-ln -sf %{_datadir}/gjs-1.0/troll Tangram-%{version}/troll
+rm -rf troll
+ln -sf %{_datadir}/gjs-1.0/troll troll
 
 %build
 %meson
